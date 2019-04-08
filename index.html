@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Персональний сайт</title>
+
+    <link href="style/reset.css" rel="stylesheet">
+    <link href="style/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+<div class="wallpaper">
+    <div class="main-img">
+    <header>
+        <nav>
+            <ul>
+                <li><span class="menu-icon"><i class="fas fa-bars"></i></span></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact me</a></li>
+            </ul>
+        </nav>
+        <h1 class="left">
+            Follow your dreams
+        </h1>
+        <h1 class="right">
+            and they will become real
+        </h1>
+    </header>
+        <div class='about cover row' id="about">
+            <div class="col-2">
+            <h2>Hi! I am Kurakina Anastasia</h2>
+            <p>
+                I am a junior web developer from Dnipro, Ukraine.
+            </p>
+            <p>
+                I propose the implementation of a full cycle of creating a web application: from the technical task to the release and support.
+
+            </p>
+            <ul>
+                <li><i class="fas fa-briefcase"></i>Intern at Zazmic inc.</li>
+                <li><i class="fas fa-graduation-cap"></i>Rocket-and-Space Engineering College, 2019</li>
+                <li><i class="far fa-envelope"></i>nastia.kyrakina@gmail.com</li>
+				<li><i class="fab fa-skype"></i>live:lomoldream12</li>
+            </ul>
+
+            </div>
+            <div class="col">
+                <img src="img/prof.jpg" alt="Kurakina Anastasia">
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div id='skills'>
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col card">
+                <h3>Web Development</h3>
+                <p>
+                    JavaScript, TypeScript,  Web sockets, Python, Django, Postgres SQL, Redis, WebStorm.
+                </p>
+                <img src="img/Skills/pc.png" class="icon">
+            </div>
+            <div class="col card">
+                <h3>Frontend Development</h3>
+                <p>
+                    HTML, CSS, SASS, JavaScript, ES6, Bootstrap.
+                </p>
+                <img src="img/Skills/front.png" class="icon">
+            </div>
+            <div class="col card">
+                <h3>Web Scraper</h3>
+                <p>
+                    Data search and processing with Python, Beautiful soup, Selenium.
+                </p>
+                <img src="img/Skills/magnifier.png" class="icon">
+            </div>
+
+         </div>
+        </div>
+
+        <div class="portfolio cover" id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="items row">
+                <div class="item col">
+                <figure class="col">
+                    <img src="img/Portfolio/house.jpg" alt="TravelApp">
+                    <figcaption><strong>Social network TravelApp</strong></figcaption>
+                </figure>
+                <div class="describe col">
+                    <p>
+                        <strong>Social network for travelers.</strong> Quick and convenient search for temporary accommodation while traveling.
+                    </p>
+                    <p>
+                        Development of the server and client, work with the database.
+                    </p>
+                </div>
+                </div>
+                <div class="item col">
+                <figure class="col">
+                    <img src="img/Portfolio/chat.jpg" alt="Chat">
+                    <figcaption><strong>Free Chat</strong></figcaption>
+                </figure>
+                <div class="describe col">
+                    <p>
+                        <strong>Multi-user chat.</strong> Ability to customize privacy, invite friends, share media content.
+                    </p>
+                    <p>
+                        Implemented through Django and Java Script with using web socket technology.
+                    </p>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order" id="contact">
+            <h2>Contact me</h2>
+            <form action="">
+                <div class="row">
+                    <div class="col">
+                        <label for="lname" class="required">Last name: </label>
+                        <input type="text" name="lname" id="lname" required placeholder="">
+                    </div>
+                    <div class="col">
+                        <label for="fname" class="required">First name: </label>
+                        <input type="text" name="fname" id="fname">
+                    </div>
+                </div>
+                <label for="email" class="required">Email:</label>
+                <input type="email" id="email">
+                <div class="row">
+                    <div class="col">
+                        <label for="work">Type of work: </label>
+                        <select name="work-type" id="work">
+                            <option>Full circle</option>
+                            <option>Front-end</option>
+                            <option>Back-end</option>
+                            <option>Web Scraping</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="slider">Time to perform: <span id="slider-value">50</span> day(s)</label>
+                        <div class="slider-box">
+                            <span>1</span>
+                                <input type="range" min="1" max="60" id="slider">
+                            <span>260</span>
+                        </div>
+                    </div>
+                </div>
+                <label for="comment">Describe you order</label>
+                <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit">
+                            Send
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="reset">
+                            Clear
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="contacts cover">
+            <div class="row">
+                <div class="col">
+                    <a href="mailto:nastia.kyrakina@gmail.com"><img src="img/contacts/gmail.png"></a>
+                </div>
+                <div class="col">
+                    <a href="https://github.com/NastiaKyrakina" target="_blank"><img src="img/contacts/github.png"></a>
+                </div>
+                <div class="col">
+                    <a href="skype:live:lomoldream12"><img src="img/contacts/skype.png"></a>
+                </div>
+                <div class="col">
+                    <a href="https://www.facebook.com/nastia.kyrakina" target="_blank"><img src="img/contacts/facebook.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</div>
+</body>
+</html>
