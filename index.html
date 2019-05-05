@@ -35,8 +35,7 @@
                 I am a junior web developer from Dnipro, Ukraine.
             </p>
             <p>
-                I propose the implementation of a full cycle of creating a web application: from the technical task to the release and support.
-
+                I develop web-applications on full stack basis – from technical assignment to the release.
             </p>
             <ul>
                 <li><i class="fas fa-briefcase"></i>Intern at Zazmic inc.</li>
@@ -66,7 +65,7 @@
             <div class="col card">
                 <h3>Frontend Development</h3>
                 <p>
-                    HTML, CSS, SASS, JavaScript, ES6, Bootstrap.
+                    HTML, CSS, SASS, Pug, JavaScript, ES6, Bootstrap.
                 </p>
                 <img src="img/Skills/front.png" class="icon">
             </div>
@@ -105,10 +104,10 @@
                 </figure>
                 <div class="describe col">
                     <p>
-                        <strong>Multi-user chat.</strong> Ability to customize privacy, invite friends, share media content.
+                        <strong>Multi-user chat.</strong> Ability to customize privacy settings, invite friends, share media content.
                     </p>
                     <p>
-                        Implemented through Django and Java Script with using web socket technology.
+                        Implemented with Python Django and JavaScript using web socket technology.
                     </p>
                 </div>
                 </div>
@@ -118,7 +117,7 @@
 
         <div class="order" id="contact">
             <h2>Contact me</h2>
-            <form action="">
+            <form action="" oninput="range_output.value = slider.valueAsNumber">
                 <div class="row">
                     <div class="col">
                         <label for="lname" class="required">Last name: </label>
@@ -143,15 +142,15 @@
                         </select>
                     </div>
                     <div class="col">
-                        <label for="slider">Time to perform: <span id="slider-value">50</span> day(s)</label>
+                        <label for="slider">Time to perform: <output id="slider-value" for="slider" name="range_output">1</output> day(s)</label>
                         <div class="slider-box">
                             <span>1</span>
-                                <input type="range" min="1" max="60" id="slider">
+                                <input type="range" min="1" max="60" id="slider" name="slider" value="1">
                             <span>260</span>
                         </div>
                     </div>
                 </div>
-                <label for="comment">Describe you order</label>
+                <label for="comment">Describe your inquiry</label>
                 <textarea name="comment" id="comment" cols="50" rows="10"></textarea>
                 <div class="row">
                     <div class="col">
